@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+tbody tr:nth-child(even) {
+  background-color: #eaf4ff; /* light blue */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff; /* white */
+}
+td a{
+    text-decoration: none;
+}
+
+td a:hover{
+    text-decoration: underline;
+}
+

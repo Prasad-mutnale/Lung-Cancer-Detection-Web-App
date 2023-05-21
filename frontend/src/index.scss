@@ -1,0 +1,72 @@
+// Override default variables before the import
+$body-bg: #000;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   
+  
+ 
+ 
+}
+.imge{
+ top: 0;
+ left: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  // background-image: url('./medic.jpg');
+  width: 100vw;
+  max-width: 100%; 
+  // background: blanchedalmond;
+} 
+.imge-content
+{
+  position: relative;
+} 
+.imge-content::after
+{
+
+  -webkit-backdrop-filter: blur(3px); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+  backdrop-filter: blur(3px); /* Supported in Chrome 76 */
+
+  content: "";
+  // display: block;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+}
+// .imge::after
+// {
+//   content: "";
+//   position: absolute;
+  
+ 
+//   filter: blur(8px);
+// }
+.content
+{
+  filter: none;
+  position: relative;
+  z-index: 2;
+
+
+
+
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,193 @@
+// Override default variables before the import
+//  $body-bg: #000;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+}
+
+
+
+/* body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+} */
+
+
+// @import "~font-awesome/css/font-awesome.css";
+
+
+
+.container1
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+.row1
+{
+  display: flex;
+  flex-direction:row;
+  margin: auto;
+}
+
+.nav-op {
+  padding: 0.4em 0.9em;
+  border: 0.15em solid #00acb1;
+  border-radius: 0.5em;
+  margin: 0.4em 0.4em;
+  font-weight: 600;
+  color:#00acb1;
+  letter-spacing: -0.03em;
+  transition: 0.6s;
+    line-height: 24px;
+    background: white;
+
+}
+.nav-op:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.nav-op:hover {
+  cursor: pointer;
+  transition: 0.6s;
+  color: #ffffff;
+  background-color:#00acb1;
+  border: 0.15em solid white;
+}
+
+.aboutCard {
+  padding: 0.4em 0.9em;
+  border: 0.15em solid #00acb1;
+  border-radius: 0.5em;
+  margin: 0.4em 0.4em;
+  font-weight: 600;
+  color:#00acb1;
+  letter-spacing: -0.03em;
+  transition: 0.6s;
+    line-height: 24px;
+    // background: white;
+
+}
+
+.aboutCard:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.aboutCard:hover {
+  cursor: pointer;
+  transition: 0.6s;
+  color: #ffffff;
+  background-color:#00acb1;
+  border: 0.15em solid white;
+}
+
+#register-bg
+{
+  opacity: 0.6;
+  background: none;
+
+}
+#imge2
+{
+  z-index: 4;
+  opacity:2;
+}
+#selector
+{
+  border-radius: 8px;
+  padding: 5px;
+}
+
+
+.girdItem1
+{
+  // grid-area: ;
+  grid-area: header;
+}
+.girdItem2
+{
+  // grid-area: ;
+  grid-area: menu;
+}
+.girdItem3
+{
+  // grid-area: ;
+  grid-area: main;
+}
+.girdItem4
+{
+  // grid-area: ;
+  grid-area: right;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu menu main main right right';
+    gap: 30px;
+    padding: 10px;
+  }
+
+.dark{
+
+  background:rgb(10, 18, 49) !important;
+  color: #ffffff;
+}
+.card2
+{
+  opacity: 0.5;
+}
+.box{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro
+{
+  background-color:#00acb1;
+}
+
+.end
+{
+  display: flex;
+ 
+ align-items: flex-end;
+ justify-content: flex-end;
+}
+
+#car
+{
+  border-radius: 5px ;
+  border:2px solid #333;
+  // background: #00acb1;
+}
